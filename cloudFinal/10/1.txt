@@ -1,0 +1,18 @@
+public class Assign_10 {
+    public Decimal x {get;set;}
+    public Decimal y {get;set;}
+    public Decimal z {get;set;}
+    public Decimal result {get;set;}
+    
+    public pagereference greatest(){
+    	result = x;
+       	
+        if (y>result){
+            result = y;
+        }
+        if (z>result){
+            result = z;
+        }
+        return null;
+    }
+}

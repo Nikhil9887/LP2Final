@@ -1,0 +1,27 @@
+<apex:page controller="CurrencyConverter" sidebar="false" >
+    <apex:form >
+        <apex:pageBlock title="Currency convertor">
+            <apex:pageBlockSection columns="1" title="" collapsible="false">  
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel >Enter from Currency </apex:outputLabel>
+                <apex:inputText value="{!fromCurrency}"/>                
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel >Enter to Currency </apex:outputLabel>
+                <apex:inputText value="{!toCurrency}"/>                
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel > Amount </apex:outputLabel>
+                <apex:inputText value="{!amount}"/>    
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                
+                Result <apex:outputText value="{!result}"/>    
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:commandButton value="Convert" action="{!convertCurrency}"/>
+            </apex:pageBlockSectionItem>
+          </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>  
+</apex:page>

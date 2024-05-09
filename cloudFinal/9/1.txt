@@ -1,0 +1,40 @@
+public class Assignment_9 {
+    public Decimal x {get;set;}
+    public Decimal y {get;set;}
+    public Decimal result {get;set;}
+    
+    public pagereference add(){
+        result = x + y;
+        return null;
+    }
+    
+    public pagereference subtract(){
+        result = x - y;
+        return null;
+    }
+    
+    public pagereference multiply(){
+        result = x * y;
+        return null;
+    }
+    
+    public pagereference divide(){
+        result = x / y;
+        return null;
+    }
+    
+    public pagereference square(){
+        result = x * x;
+        return null;
+    }
+    
+    public pagereference sqroot(){
+        result = Math.sqrt(x);
+        return null;
+    }
+    
+    public pagereference power(){
+        result = Math.pow((Integer)x, (Integer)y);
+        return null;
+    }
+}

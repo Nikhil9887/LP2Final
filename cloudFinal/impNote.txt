@@ -1,0 +1,16 @@
+public class Assign_11 {
+    
+    public static void generateBill(Decimal units, Decimal costPerUnit){
+        Decimal bill = units * costPerUnit;
+        System.debug(bill);
+    }
+}
+
+
+if you want to run it from the console then the method name should be
+public static void method_name(parameters){
+    Decimal a = 2 * 3;
+    System.debug(a);
+}
+
+else it gives error that non-static ... cannot be called from static method

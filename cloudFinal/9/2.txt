@@ -1,0 +1,41 @@
+<apex:page controller="Assignment_9" sidebar="false">
+    <apex:form>
+    	<apex:pageBlock title="Calculator">
+        	<apex:pageBlockSection columns="1">
+            	<apex:pageBlockSectionItem>
+                	<apex:outputLabel>Enter x value</apex:outputLabel>
+                    <apex:inputText value = "{!x}"></apex:inputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem>
+                	<apex:outputLabel>Enter y value</apex:outputLabel>
+                    <apex:inputText value = "{!y}"></apex:inputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem>
+                	<apex:outputLabel>Result</apex:outputLabel>
+                    <apex:inputText value = "{!result}"></apex:inputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem>
+                	<apex:commandButton value = "Addition" action = "{!add}"></apex:commandButton>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem>
+                	<apex:commandButton value = "Subtraction" action = "{!subtract}"></apex:commandButton>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem>
+                	<apex:commandButton value = "Multiplication" action = "{!multiply}"></apex:commandButton>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem>
+                	<apex:commandButton value = "Division" action = "{!divide}"></apex:commandButton>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem>
+                	<apex:commandButton value = "Square" action = "{!square}"></apex:commandButton>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem>
+                	<apex:commandButton value = "Square Root" action = "{!sqRoot}"></apex:commandButton>
+                </apex:pageBlockSectionItem>
+                 <apex:pageBlockSectionItem>
+                	<apex:commandButton value = "Power" action = "{!power}"></apex:commandButton>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

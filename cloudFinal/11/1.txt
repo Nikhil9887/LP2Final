@@ -1,0 +1,15 @@
+public class Assignmnet_11 {
+	public Integer unit {get;set;}
+    public Integer result {get;set;}
+    public Double celsius {get;set;}
+    public Double fahrenheit {get;set;}
+    
+    public pagereference convert() {
+        fahrenheit = (celsius * 9/5) + 32;
+        return null;
+    }
+    public pagereference calculate() {
+        result = unit*10;
+        return null;
+    }
+}

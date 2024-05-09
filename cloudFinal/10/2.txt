@@ -1,0 +1,26 @@
+<apex:page controller = "Assign_10" sidebar="false">
+    <apex:form>
+    	<apex:pageBlock title = "Greatest of three numbers">
+        	<apex:pageBlockSection columns="1">
+            	<apex:pageBlockSectionItem>
+                	<apex:outputLabel>Enter x</apex:outputLabel>
+                    <apex:inputText value = "{!x}"></apex:inputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem>
+                	<apex:outputLabel>Enter y</apex:outputLabel>
+                    <apex:inputText value = "{!y}"></apex:inputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem>
+                	<apex:outputLabel>Enter z</apex:outputLabel>
+                    <apex:inputText value = "{!z}"></apex:inputText>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem>
+                	<apex:outputLabel>Result</apex:outputLabel>
+                    <apex:inputText value = "{!result}"></apex:inputText>
+                </apex:pageBlockSectionItem>
+                
+                <apex:commandButton value = "Find" action = "{!greatest}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
